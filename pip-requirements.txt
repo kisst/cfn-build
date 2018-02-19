@@ -1,0 +1,4 @@
+awscli
+jinja2
+pylint
+yamllint

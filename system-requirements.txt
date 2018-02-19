@@ -1,0 +1,5 @@
+libpython-dev
+python-dev
+python-pip
+python-yaml
+shellcheck
