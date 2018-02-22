@@ -1,5 +1,6 @@
 awscli
 boto3
+cfn-response
 jinja2
 pylint
 yamllint
