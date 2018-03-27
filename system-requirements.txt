@@ -1,3 +1,4 @@
+jq
 libpython-dev
 python-dev
 python-pip
