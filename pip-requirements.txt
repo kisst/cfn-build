@@ -1,6 +1,6 @@
-awscli
-boto3
-cfn-response
-jinja2
-pylint
-yamllint
+awscli==1.14.44
+boto3==1.5.34
+cfn-response==0.0.4
+Jinja2==2.10
+pylint==1.8.2
+yamllint==1.11.0
