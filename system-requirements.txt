@@ -1,7 +1,4 @@
 bc
 jq
-libpython-dev
-python-dev
-python-pip
-python-yaml
+nodejs
 shellcheck
