@@ -1,8 +1,13 @@
 #!/usr/bin/env bash
 
+set -euf -o pipefail
+
 sys_r=$(wc -l < system-requirements.txt)
 pip_r=$(wc -l < pip-requirements.txt)
 node_r=$(wc -l < node-requirements.txt)
+
+apt-get update -qq
+apt-get install curl gnupg -y
 
 curl -sL https://deb.nodesource.com/setup_8.x | bash -
 
@@ -23,6 +28,6 @@ then
   xargs npm i -g < node-requirements.txt || exit 1
 fi
 
-wget -O /usr/bin/yq https://github.com/mikefarah/yq/releases/download/1.14.1/yq_linux_amd64
+curl -fsSL -o /usr/bin/yq https://github.com/mikefarah/yq/releases/download/1.14.1/yq_linux_amd64
 chmod +x /usr/bin/yq
 
