@@ -4,7 +4,7 @@ sys_r=$(wc -l < system-requirements.txt)
 pip_r=$(wc -l < pip-requirements.txt)
 node_r=$(wc -l < node-requirements.txt)
 
-apt-get update -qq
+curl -sL https://deb.nodesource.com/setup_8.x | bash -
 
 if [ "$sys_r" -ne "0" ]
 then
