@@ -1,5 +1,2 @@
-bc
 git
-jq
-nodejs
 shellcheck
