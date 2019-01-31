@@ -1,3 +1,3 @@
-cfn-flip
-cfn-lint
-yamllint
+cfn-flip==1.1.0.post1
+cfn-lint==0.13.0
+yamllint==1.14.0
